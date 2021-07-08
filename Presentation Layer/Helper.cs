@@ -31,13 +31,15 @@ namespace Presentation_Layer
 
         public static bool SignUp(int randomness)
         {
+            GameController gc = new GameController();
             Console.WriteLine("Inserisci il tuo Nickname: ");
             string nick = Console.ReadLine()+randomness;
             Console.WriteLine("Inserisci la tua Password: ");
             string pass = Console.ReadLine();
-            bool accettato = SignUpUtente();
-            if(accettato) Console.WriteLine("Questo è il tuo Nick: {0}\n", nick);
-            return accettato;
+            Utente accettato = gc.SignUpUtente(nick, pass);
+            if (accettato != null) Console.WriteLine("Questo è il tuo Nick: {0}\n", nick);
+            else return false;
+            return true;
         }
 
         public static void MenuDiGiocoNonAdmin(Utente user)
@@ -70,11 +72,12 @@ namespace Presentation_Layer
 
         public static bool Login()
         {
+            GameController gc = new GameController();
             Console.WriteLine("Inserisci il tuo Nickname: ");
             string nick = Console.ReadLine();
             Console.WriteLine("Inserisci la tua Password: ");
             string pass = Console.ReadLine();
-            Utente exist = GameController.LoginUser(nick, pass);
+            Utente exist = gc.LoginUser(nick, pass);
             if (exist!=null) MenuDiGiocoNonAdmin(exist);
             else return false;
             return true;

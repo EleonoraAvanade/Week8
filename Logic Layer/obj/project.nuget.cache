@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RecOGBDLx08qH0ANta9DhzcJqG5WoaTFzQO0rnQ0s/vgT4vwMyLiYH9j23PfDcS8EQcicG9Hz9RKdttiKzSf+w==",
+  "dgSpecHash": "qTv3ACWaCVbehDcI8HMAWqmr2u7Y210UvtJeMZfH8o5dKZb0LpA/8q1ECJyvvc0lPTK3mKWQh6OvOZu8n6Qupg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eleonora.lombardo\\source\\repos\\Presentation Layer\\Logic Layer\\Logic Layer.csproj",
+  "projectFilePath": "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Logic Layer\\Logic Layer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eleonora.lombardo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\eleonora.lombardo\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

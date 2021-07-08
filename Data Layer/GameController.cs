@@ -8,11 +8,20 @@ namespace Data_Layer
     public class GameController
     {
         RepositoryUtente utenti = new RepositoryUtente();
-        public static Utente LoginUser(string name, string password)
+        public Utente LoginUser(string name, string password)
         {
-            ICollection<Utente> user = utenti.GetById(name);
-            if (user.Count!=0) return user;
+            List<Utente> user = utenti.GetById(name);
+            if (user.Count != 0) foreach (Utente ob in user) return ob;
             return null;
+        }
+        public Utente SignUpUtente(string name, string password)
+        {
+            Utente utente = new Utente();
+            utente.Nick = name;
+            utente.Password = password;
+            utente.eroi = new List<Eroe>();
+            utenti.Create(utente);
+            return utente;
         }
     }
 }

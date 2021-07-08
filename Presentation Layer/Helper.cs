@@ -55,6 +55,7 @@ namespace Presentation_Layer
                 switch (choice)
                 {
                     case 1:
+                        Partita partita = new Partita();////sistemare con game controller
                         Play(user );
                         break;
                     case 2:

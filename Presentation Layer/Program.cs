@@ -18,8 +18,8 @@ namespace Presentation_Layer
                 switch (choice)
                 {
                     case 1:
-                        bool r = Helper.Login();
-                        if (!r) Console.WriteLine("Non esistente\n");
+                        bool results = Helper.Login();
+                        if (!results) Console.WriteLine("Non esistente\n");
                         break;
                     case 2:
                         while (!Helper.SignUp(randomness))

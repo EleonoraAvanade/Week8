@@ -7,6 +7,8 @@ namespace Logic_Layer
 {
     public class GameController
     {
+        //int contUtenti = 0;
+        //int contEroi = 0;
         RepositoryUtente utenti = new RepositoryUtente();
         RepositoryEroe eroi = new RepositoryEroe();
         RepositoryArma armi = new RepositoryArma();

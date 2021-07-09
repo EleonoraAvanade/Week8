@@ -2,7 +2,7 @@
 
 namespace Data_Layer.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class Newmigration20 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -82,6 +82,35 @@ namespace Data_Layer.Migrations
                         principalColumn: "Nick",
                         onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Armi",
+                columns: new[] { "id", "Danno", "Nome", "TipoPersonaggio" },
+                values: new object[,]
+                {
+                    { 1, 8, "Ascia", "Soldier" },
+                    { 2, 5, "Mazza", "Soldier" },
+                    { 3, 10, "Spada", "Soldier" },
+                    { 4, 8, "Arco e frecce", "Wizard" },
+                    { 5, 5, "Bacchetta", "Wizard" },
+                    { 6, 10, "Bastone Magico", "Wizard" },
+                    { 7, 7, "Arco", "Ghost" },
+                    { 8, 5, "Clava", "Ghost" },
+                    { 9, 15, "Divinazione", "Lucifer" },
+                    { 10, 10, "Fulmine", "Lucifer" },
+                    { 11, 8, "Tempesta", "Lucifer" },
+                    { 12, 15, "Tempesta oscura", "Lucifer" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Mostri",
+                columns: new[] { "id", "Categoria", "idArma" },
+                values: new object[] { 2, "Ghost", 7 });
+
+            migrationBuilder.InsertData(
+                table: "Mostri",
+                columns: new[] { "id", "Categoria", "idArma" },
+                values: new object[] { 1, "Lucifer", 11 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Eroi_idArma",

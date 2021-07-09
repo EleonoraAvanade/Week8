@@ -39,6 +39,92 @@ namespace Data_Layer.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Armi");
+
+                    b.HasData(
+                        new
+                        {
+                            id = 1,
+                            Danno = 8,
+                            Nome = "Ascia",
+                            TipoPersonaggio = "Soldier"
+                        },
+                        new
+                        {
+                            id = 2,
+                            Danno = 5,
+                            Nome = "Mazza",
+                            TipoPersonaggio = "Soldier"
+                        },
+                        new
+                        {
+                            id = 3,
+                            Danno = 10,
+                            Nome = "Spada",
+                            TipoPersonaggio = "Soldier"
+                        },
+                        new
+                        {
+                            id = 4,
+                            Danno = 8,
+                            Nome = "Arco e frecce",
+                            TipoPersonaggio = "Wizard"
+                        },
+                        new
+                        {
+                            id = 5,
+                            Danno = 5,
+                            Nome = "Bacchetta",
+                            TipoPersonaggio = "Wizard"
+                        },
+                        new
+                        {
+                            id = 6,
+                            Danno = 10,
+                            Nome = "Bastone Magico",
+                            TipoPersonaggio = "Wizard"
+                        },
+                        new
+                        {
+                            id = 7,
+                            Danno = 7,
+                            Nome = "Arco",
+                            TipoPersonaggio = "Ghost"
+                        },
+                        new
+                        {
+                            id = 8,
+                            Danno = 5,
+                            Nome = "Clava",
+                            TipoPersonaggio = "Ghost"
+                        },
+                        new
+                        {
+                            id = 9,
+                            Danno = 15,
+                            Nome = "Divinazione",
+                            TipoPersonaggio = "Lucifer"
+                        },
+                        new
+                        {
+                            id = 10,
+                            Danno = 10,
+                            Nome = "Fulmine",
+                            TipoPersonaggio = "Lucifer"
+                        },
+                        new
+                        {
+                            id = 11,
+                            Danno = 8,
+                            Nome = "Tempesta",
+                            TipoPersonaggio = "Lucifer"
+                        },
+                        new
+                        {
+                            id = 12,
+                            Danno = 15,
+                            Nome = "Tempesta oscura",
+                            TipoPersonaggio = "Lucifer"
+                        });
                 });
 
             modelBuilder.Entity("Data_Layer.Models.Eroe", b =>
@@ -96,6 +182,20 @@ namespace Data_Layer.Migrations
                     b.HasIndex("idArma");
 
                     b.ToTable("Mostri");
+
+                    b.HasData(
+                        new
+                        {
+                            id = 1,
+                            Categoria = "Lucifer",
+                            idArma = 11
+                        },
+                        new
+                        {
+                            id = 2,
+                            Categoria = "Ghost",
+                            idArma = 7
+                        });
                 });
 
             modelBuilder.Entity("Data_Layer.Models.Utente", b =>

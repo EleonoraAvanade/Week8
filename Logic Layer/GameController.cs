@@ -43,11 +43,18 @@ namespace Logic_Layer
             string Categoria=null;
             if (res == 1) Categoria = "Soldier";
             else Categoria = "Wizard";
-            Console.WriteLine("Scegli l'arma tra le seguenti:\n");
-            armi.GetAll().ToString();
-            ICollection<Arma> a=armi.GetAll();
-            foreach (Arma eroeee in a) Console.WriteLine(eroeee.ToString());
-            int idArma=GestisciInput(a.Count);
+            bool choi = true;
+            ICollection<Arma> a = armi.GetAll();
+            Arma[] array = new Arma[a.Count];
+            a.CopyTo(array, 0);
+            int idArma = 0;
+            while (choi)
+            {
+                Console.WriteLine("Scegli l'arma tra le seguenti:\n");
+                foreach (Arma eroeee in a) Console.WriteLine(eroeee.ToString());
+                idArma=GestisciInput(a.Count);
+                if (array[idArma].TipoPersonaggio == Categoria) choi = false;
+            }
             Eroe eroe = new Eroe();
             eroe.idArma = idArma;
             eroe.Livello = 1;

@@ -1495,19 +1495,6 @@
         "runtime": {
           "bin/placeholder/Data Layer.dll": {}
         }
-      },
-      "Presentation Layer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Data Layer": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Presentation Layer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Presentation Layer.dll": {}
-        }
       }
     }
   },
@@ -5725,17 +5712,11 @@
       "type": "project",
       "path": "../Data Layer/Data Layer.csproj",
       "msbuildProject": "../Data Layer/Data Layer.csproj"
-    },
-    "Presentation Layer/1.0.0": {
-      "type": "project",
-      "path": "../Presentation Layer/Presentation Layer.csproj",
-      "msbuildProject": "../Presentation Layer/Presentation Layer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Data Layer >= 1.0.0",
-      "Presentation Layer >= 1.0.0"
+      "Data Layer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5775,9 +5756,6 @@
           "projectReferences": {
             "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Data Layer\\Data Layer.csproj": {
               "projectPath": "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Data Layer\\Data Layer.csproj"
-            },
-            "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Presentation Layer\\Presentation Layer.csproj": {
-              "projectPath": "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Presentation Layer\\Presentation Layer.csproj"
             }
           }
         }

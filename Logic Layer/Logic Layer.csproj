@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data Layer\Data Layer.csproj" />
-    <ProjectReference Include="..\Presentation Layer\Presentation Layer.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,6 @@
 ﻿using Data_Layer;
 using Data_Layer.Models;
+using Logic_Layer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace Presentation_Layer
                 if (ret > 0 || ret < max + 1) return ret;
                 Console.WriteLine("Inserisci un numero in lista!\n");
             }
-            return 0;//Nel caso dovesse per un qualche motivo uscire dal while
+            //return 0;Nel caso dovesse per un qualche motivo uscire dal while
         }
 
         public static bool SignUp(int randomness)
@@ -52,17 +53,18 @@ namespace Presentation_Layer
                         "\t3 - Elimina un eroe\n" +
                         "\t4 - Esci\n");
                 int choice = Helper.GestisciInput(4);
+                GameController partita = new GameController();
                 switch (choice)
                 {
                     case 1:
-                        Partita partita = new Partita();////sistemare con game controller
-                        Play(user );
+                        ////sistemare con game controller
+                        partita.Play(user);
                         break;
                     case 2:
-                        Create(user);
+                        partita.Create(user);
                         break;
                     case 3:
-                        Delete(user);
+                        partita.Delete(user);
                         break;
                     case 4:
                         Console.WriteLine("Alla prossima!");

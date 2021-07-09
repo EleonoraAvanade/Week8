@@ -24,6 +24,7 @@ namespace Data_Layer.Repository
                     }
                     catch (Exception ex)
                     {
+                        Console.WriteLine(ex.Message);
                         return null;
                     }
 
@@ -37,6 +38,19 @@ namespace Data_Layer.Repository
             using (var ctx = new FinalFantasyContext())
             {
                 return ctx.Mostri.ToList();
+            }
+        }
+        public Mostro GetById(int id)
+        {
+            using (var ctx = new FinalFantasyContext())
+            {
+                if (id < 0)
+                {
+                    return null;
+                }
+                var mostro = ctx.Mostri
+                                      .FirstOrDefault(x => x.id == id);
+                return mostro;
             }
         }
     }

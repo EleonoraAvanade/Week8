@@ -1,0 +1,5 @@
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.csprojAssemblyReference.cache
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.AssemblyInfoInputs.cache
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.AssemblyInfo.cs
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.csproj.CoreCompileInputs.cache

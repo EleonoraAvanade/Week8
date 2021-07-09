@@ -8,5 +8,9 @@ namespace Data_Layer.Models
 {
     public class Mostro:Personaggio
     {
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

@@ -13,5 +13,9 @@ namespace Data_Layer.Models
         public string Nome { get; set; }
         public int Livello { get; set; }
         public int Esperienza { get; set; }
+        public override string ToString()
+        {
+            return base.ToString()+$"{NickUtente} - {Nome} - {Livello} -{Esperienza}";
+        }
     }
 }

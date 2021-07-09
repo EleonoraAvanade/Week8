@@ -24,6 +24,7 @@ namespace Data_Layer.Repository
                     }
                     catch (Exception ex)
                     {
+                        Console.WriteLine(ex.Message);
                         return null;
                     }
 
@@ -36,7 +37,20 @@ namespace Data_Layer.Repository
         {
             using (var ctx = new FinalFantasyContext())
             {
-                return ctx.Utenti.ToList();
+                return ctx.Armi.ToList();
+            }
+        }
+        public Arma GetById(int id)
+        {
+            using (var ctx = new FinalFantasyContext())
+            {
+                if (id < 0)
+                {
+                    return null;
+                }
+                var armi = ctx.Armi
+                                      .FirstOrDefault(x => x.id == id);
+                return armi;
             }
         }
     }

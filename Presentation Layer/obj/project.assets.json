@@ -1495,6 +1495,19 @@
         "runtime": {
           "bin/placeholder/Data Layer.dll": {}
         }
+      },
+      "Logic Layer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Data Layer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Logic Layer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Logic Layer.dll": {}
+        }
       }
     }
   },
@@ -5712,11 +5725,16 @@
       "type": "project",
       "path": "../Data Layer/Data Layer.csproj",
       "msbuildProject": "../Data Layer/Data Layer.csproj"
+    },
+    "Logic Layer/1.0.0": {
+      "type": "project",
+      "path": "../Logic Layer/Logic Layer.csproj",
+      "msbuildProject": "../Logic Layer/Logic Layer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Data Layer >= 1.0.0"
+      "Logic Layer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5754,8 +5772,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Data Layer\\Data Layer.csproj": {
-              "projectPath": "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Data Layer\\Data Layer.csproj"
+            "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Logic Layer\\Logic Layer.csproj": {
+              "projectPath": "C:\\Users\\eleonora.lombardo\\Desktop\\Presentation Layer\\Logic Layer\\Logic Layer.csproj"
             }
           }
         }

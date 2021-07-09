@@ -14,5 +14,9 @@ namespace Data_Layer.Models
         public string TipoPersonaggio { get; set; }
         public ICollection<Eroe> eroi { get; set; } = new List<Eroe>();
         public ICollection<Mostro> mostri { get; set; } = new List<Mostro>();
+        public override string ToString()
+        {
+            return $" {id} - {Nome} - {Danno} - {TipoPersonaggio}";
+        }
     }
 }

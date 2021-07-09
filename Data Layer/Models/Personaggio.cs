@@ -12,5 +12,9 @@ namespace Data_Layer.Models
         public string Categoria { get; set; }
         public int idArma { get; set; }
         public Arma arma { get; set; }
+        public override string ToString()
+        {
+            return $"{id} - {Categoria} - {idArma}";
+        }
     }
 }

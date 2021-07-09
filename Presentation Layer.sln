@@ -9,13 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation Layer", "Prese
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic Layer", "Logic Layer\Logic Layer.csproj", "{5471B849-3533-495D-B1AD-15E33CDCDD3E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{7CC246C3-D01E-48D2-BEF0-4DCCCA06F3A7} = {7CC246C3-D01E-48D2-BEF0-4DCCCA06F3A7}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data Layer", "Data Layer\Data Layer.csproj", "{80C59159-76E8-4C69-8428-99A4CB73DA03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{C9EA521F-E64A-4E96-9A40-BABE39EBFF1E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5471B849-3533-495D-B1AD-15E33CDCDD3E} = {5471B849-3533-495D-B1AD-15E33CDCDD3E}
+		{7CC246C3-D01E-48D2-BEF0-4DCCCA06F3A7} = {7CC246C3-D01E-48D2-BEF0-4DCCCA06F3A7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

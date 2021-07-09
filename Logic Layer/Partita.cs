@@ -26,7 +26,6 @@ namespace Logic_Layer
         private bool Fight(int liv)
         {
             RepositoryMostro repository = new RepositoryMostro();
-            ICollection<Mostro> mostro = repository.GetAll();
             double HeroPower = Power(armis.GetById(eroe.idArma));
             double HeroLifePoint = LifePoint(eroe.Livello);
             Random r=new Random();
@@ -111,13 +110,14 @@ namespace Logic_Layer
         private int RandMonsterLevel(int livello)
         {
             Random r = new Random();
-            return r.Next(0, livello);
+            return r.Next(1, livello);
         }
 
         public Eroe Choose()
         {
             Console.WriteLine("Scegli tra i seguenti eroi immettendone l'id:\n");
             ICollection<Eroe> eroi= repositoryEroe.GetAll(uts);
+            foreach (Eroe eroeee in eroi) eroeee.ToString();
             int choice=gc.GestisciInput(eroi.Count);
             Eroe eroe=repositoryEroe.GetById(choice);
             return eroe;

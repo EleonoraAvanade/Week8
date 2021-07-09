@@ -117,7 +117,7 @@ namespace Logic_Layer
         {
             Console.WriteLine("Scegli tra i seguenti eroi immettendone l'id:\n");
             ICollection<Eroe> eroi= repositoryEroe.GetAll(uts);
-            foreach (Eroe eroeee in eroi) eroeee.ToString();
+            foreach (Eroe eroeee in eroi) Console.WriteLine(eroeee.ToString());
             int choice=gc.GestisciInput(eroi.Count);
             Eroe eroe=repositoryEroe.GetById(choice);
             return eroe;

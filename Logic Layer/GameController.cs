@@ -46,7 +46,7 @@ namespace Logic_Layer
             Console.WriteLine("Scegli l'arma tra le seguenti:\n");
             armi.GetAll().ToString();
             ICollection<Arma> a=armi.GetAll();
-            foreach (Arma eroeee in a) eroeee.ToString();
+            foreach (Arma eroeee in a) Console.WriteLine(eroeee.ToString());
             int idArma=GestisciInput(a.Count);
             Eroe eroe = new Eroe();
             eroe.idArma = idArma;
@@ -84,7 +84,7 @@ namespace Logic_Layer
         {
             Console.WriteLine("Quale eroe vuoi eliminare?\n");
             ICollection<Eroe> a = eroi.GetAll(u);
-            foreach (Eroe eroeee in a) eroeee.ToString();
+            foreach (Eroe eroeee in a) Console.WriteLine(eroeee.ToString());
             Eroe[] e = new Eroe[a.Count];
             int index=GestisciInput(a.Count);
             eroi.Delete(e[index].id);

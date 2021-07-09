@@ -58,7 +58,7 @@ namespace Logic_Layer
             }
         }
 
-        private double LifePoint(int liv)
+        public double LifePoint(int liv)
         {
             switch (liv)
             {
@@ -100,7 +100,7 @@ namespace Logic_Layer
             repositoryEroe.Update(eroe, esperienza);
         }
 
-        private double print(string attaccante, double damage, double lifepoint, string ricevente)
+        public double print(string attaccante, double damage, double lifepoint, string ricevente)
         {
             Console.WriteLine("Attacca {0} infliggendo {1} a {2}\n", attaccante, damage, ricevente);
             lifepoint -= damage;

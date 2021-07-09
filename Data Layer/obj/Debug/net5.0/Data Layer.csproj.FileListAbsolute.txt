@@ -3,3 +3,13 @@ C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.
 C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.AssemblyInfoInputs.cache
 C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.AssemblyInfo.cs
 C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.csproj.CoreCompileInputs.cache
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\bin\Debug\net5.0\Data Layer.deps.json
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\bin\Debug\net5.0\Data Layer.runtimeconfig.json
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\bin\Debug\net5.0\Data Layer.runtimeconfig.dev.json
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\bin\Debug\net5.0\Data Layer.dll
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\bin\Debug\net5.0\ref\Data Layer.dll
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\bin\Debug\net5.0\Data Layer.pdb
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.dll
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\ref\Data Layer.dll
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.pdb
+C:\Users\eleonora.lombardo\Desktop\Presentation Layer\Data Layer\obj\Debug\net5.0\Data Layer.genruntimeconfig.cache

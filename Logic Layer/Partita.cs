@@ -15,8 +15,12 @@ namespace Logic_Layer
         public void Play(Utente ut) {
             uts = ut;
             eroe=Choose();
-            int livelloMostro = RandMonsterLevel(eroe.Livello);
-            Fight(livelloMostro);
+            if (eroe != null)
+            {
+                int livelloMostro = RandMonsterLevel(eroe.Livello);
+                Fight(livelloMostro);
+            }
+            else Console.WriteLine("Eroe inesistente\n");
         }
 
         private bool Fight(int liv)

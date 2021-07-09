@@ -23,6 +23,7 @@ namespace Presentation_Layer
                 {
                     Console.WriteLine("Inserisci un numero!\n");
                     choice = Console.ReadLine();
+                    result = Int32.TryParse(choice, out ret);
                 }
                 if (ret > 0 || ret < max + 1) return ret;
                 Console.WriteLine("Inserisci un numero in lista!\n");
